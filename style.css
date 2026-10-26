@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #ffbee9;
+    line-height: 1.6;
+    color: #1d3964;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    padding: 0 40px;
+    background-color: #ff5cb6;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+}
+nav a:hover {
+    border-bottom: 1px solid #891845;
+}
+header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 60px 60px 60px;
+    background-image: 
+    linear-gradient(
+        #ffbee9,
+        #ff5cb6
+    );
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+header h1 {
+    font-size: clamp(3rem, 9vw, 8rem);
+    line-height: 0.9;
+    max-width: 1100px;
+    text-transform: uppercase;
+}
+header p {
+    font-size: 1.4rem;
+    margin-top: 30px;
+}
+
+main {
+    width: 100%;
+}
+
+section {
+    min-height: 100vh;
+    padding: 100px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section h2 {
+    font-size: clamp(3rem, 7vw, 7rem) ;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    line-height: 0.9;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    background-color: #ffbee9;
+    color: #ff5cb6;
+}
+.hero h2 {
+    font-size: clamp(3rem, 6vw, 6rem);
+}
+.hero p {
+    max-width: 500px;
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+.hero img {
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+}
+.hero a {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #ff5cb6;
+    color: #891845;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.hero a:hover {
+    background-color: #891845;
+    color:#ffffff;
+}
+
+#sobre-mi {
+    background-color: #ffffff;
+}
+#sobre-mi p {
+    max-width: 900px;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+#formacion {
+    background-color: #ff5cb6;
+    color:#ffffff; 
+}
+#formacion article {
+    border-top: 2px solid #891845;
+    padding: 30px 0;
+    max-width: 1000px;
+}
+#formacion h3 {
+    font-size: 2rem;
+}
+#formacion p {
+    margin-top: 10px;
+}
+
+#experiencia {
+    background-color: #ffffff;
+}
+#experiencia article {
+    border-top: 2px solid #891845;
+    padding: 30px 0;
+    max-width: 1000px;
+}
+#experiencia h3 {
+    font-size: 2rem;
+}
+#experiencia p {
+    margin-top: 10px;
+}
+
+
+#experiencia-profesional {
+    background-color: #ff5cb6;
+    color:#ffffff;
+}
+#experiencia-profesional > p {
+    max-width: 850px;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+#experiencia-profesional table {
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    background-color: #ff53c6;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px #ffffff;
+}
+#experiencia-profesional caption {
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#experiencia-profesional thead {
+    background-color: #891845;
+    color: #ffffff;
+}
+#experiencia-profesional th {
+    padding: 20px;
+    text-align: left;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#experiencia-profesional td {
+    padding: 20px;
+    font-size: 1rem;
+    border-bottom:1px solid #ffbee9;
+}
+#experiencia-profesional tbody tr:last-child {
+    border-bottom: none;
+}
+#experiencia-profesional tbody tr {
+    transition: 0.3s;
+}
+#experiencia-profesional tbody tr:hover {
+    background-color: #e957c0;
+    transform: scale(1.01);
+}
+
+#habilidades {
+    background-color: #ffffff;
+    color: #ff5cb6;
+}
+
+#habilidades ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    list-style: none;
+    max-width: 1000px;
+}
+
+#habilidades li {
+    font-size: 2rem;
+    border-bottom: 2px solid #ff5cb6;
+    padding: 15px 0;
+    transition: 0.3s;
+}
+#habilidades li:hover {
+    padding-left: 20px;
+}
+
+#software {
+    background-color: #ffbee9;
+    color: #891845;
+}
+#software ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+}
+#software li {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    border: 2px solid #891845;
+    transition: 0.3s;
+}
+#software li:hover {
+    background-color: #891845;
+    color: #ffffff;
+}
+#proyectos {
+    margin-bottom: 100px;
+    max-width: 1200px;
+}
+#proyectos img {
+    display: block;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    margin-bottom: 25px;
+    transition: transform 0.5s;
+}
+.proyecto img:hover {
+    transform: scale(1.05);
+}
+.proyecto h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.proyecto p {
+    max-width: 700px;
+    margin-bottom: 10px;
+}
+.proyecto a {
+    display: inline-block;
+    margin-top: 20px;
+    border-bottom: 1px solid #891845;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+#idiomas {
+    background-color: #ff5cb6;
+    color: #ffffff;
+}
+#idiomas ul {
+    list-style: none;
+    max-width: 800px;
+}
+#idiomas li {
+    font-size: 2rem;
+    padding: 20px 0;
+    border-bottom: 2px solid #ffffff;
+}
+#contacto {
+    background-color: #ffffff;
+    min-height: 88vh;
+    color: #ff5cb6;
+}
+#contacto p {
+font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+#contacto a {
+    font-weight: bold;
+    color: #ff5cb6;
+    text-decoration: none;
+    border-bottom: 2px solid #ff5cb6;
+}
+footer {
+    background-color: #ff5cb6;
+    padding: 40px 8%;
+    gap: 20px;
+    justify-content: space-between;
+    display: flex;
+}
